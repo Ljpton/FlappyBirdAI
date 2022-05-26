@@ -5,7 +5,7 @@ import sys
 import neat
 import math
 
-pygame.init();
+pygame.init()
 
 SCREEN_HEIGHT = 512
 SCREEN_WIDTH = 288
@@ -30,6 +30,7 @@ STATISTICS_FONT = pygame.font.Font(os.path.join("Assets/fonts", "Consolas.ttf"),
 
 high_score = 0
 fps = 30
+
 
 class Bird:
     X_POS = 90
@@ -158,6 +159,7 @@ def eval_genomes(genomes, config):
         SCREEN.blit(BACKGROUND, (0, 0))
 
     run = True
+
     while run:
         for event in pygame.event.get():
             if event.type == pygame.QUIT:
